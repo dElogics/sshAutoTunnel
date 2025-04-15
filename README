@@ -8,7 +8,7 @@ sshkey -- Path of the unencrypted private key to the sshd server.
 sshuser -- The ssh user to use to create the reverse tunnel.
 exposePorts -- What port will the server be listening to for the created reverse tunnel.
 sshPort -- SSH port of the server on the remote linux machine.
-privateIP -- The private IP of the remote server to which the reverse tunneled connection will listen to. This's probably the IP of the interface via which you access the Internet on the remote server.
+privateIP -- The private IP of the remote server to which the reverse tunneled connection will listen to. This's probably the IP of the interface via which you access the Internet on the remote server. If you set this to * it implies that it'll listen on all IPs.
 localIP -- The IP to which the connection will map on the client. This's probably localhost, or the IP to which the sshd on your system listens to.
 localPort -- The port to which the connection will map on the client (your system).
 writeIntervel -- The interval between which this script will write to the created SSH session to the remote linux machine to test the connection.
